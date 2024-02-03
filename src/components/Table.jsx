@@ -9,7 +9,7 @@ export default function Table({ tableData }) {
       day: "numeric"
     };
     return new Date(date).toLocaleDateString("en-US", options);
-  }  
+  }
 
 
   console.log('table data', tableData);
@@ -34,7 +34,7 @@ export default function Table({ tableData }) {
 
             <tr key={data.id}>
               <td>{formateDate(data.content.timestamp)}</td>
-              <td>{data.content.title}</td>
+              <td><p>{data.content.title}</p></td>
               <td>{data.creator.username}</td>
               <td>{data.content.content_platform} </td>
               {/* <td> <img src={data.thumbnail_url} alt="Thumbnail" /> </td> */}

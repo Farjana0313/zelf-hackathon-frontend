@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom"
-import loginImg from "../assets/images/login_img.png"
+import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
+import circleImg from "../assets/images/Selection.png";
+import loginImg from "../assets/images/login_img.png";
 export default function LoginForm() {
+    const { loginWithRedirect } = useAuth0();
     return (
         <div className="login_form">
             <div className="login-banner">
@@ -11,16 +14,17 @@ export default function LoginForm() {
                     <h3>Register Your Account</h3>
                 </div>
                 <div className="form-control">
-                    <input type="radio" id="brand" />
-                    <label htmlFor="brand">I Represent a Brand</label>
+                    <p> <img src={circleImg} alt="" /> I Represent a Brand</p>
                 </div>
-                <div className="submit_btn">
-                    <Link to="">Continue</Link>
-                </div>
+                <Link to="/home">
+                    <button className="submit_btn">Continue</button>
+                </Link>
+                {/* <button className="submit_btn" onClick={() => loginWithRedirect()}>Continue</button> */}
+
                 <div>
                     <p>Already a member? <Link to="">Sign In</Link></p>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

@@ -9,7 +9,8 @@ export default function Header() {
     <>
       <header className="header">
         <div className="header_logo">
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="" /></Link>
         </div>
         <div className="header_nav">
           <button className="sign_in_btn">Sign In</button>
