@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  background: #F9FAFA;
+}
+
+.container {
+  width: 1440px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  height: 66px;
+  padding: 16px 104px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: #E3E4E8;
+  background: #FFF;
+}
+
+.header_logo {}
+
+.sign_in_btn {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #3354FF;
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
+
+.join_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  background: #3354FF;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+
+}
+
+.header_nav ul li a {
+  text-decoration: none;
+}
+
+/* *********** Login Form ************ */
+.login_form {
+  display: flex;
+  width: 1056px;
+  height: 563px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.05);
+  margin: 50px 120px;
+}
+
+.login-banner {
+  width: 583px;
+  /* height: 649px; */
+}
+
+.login-banner img {
+  width: 100%;
+  height: 563px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form {
+  padding: 80px;
+  text-align: center;
+}
+
+.form-title h3 {
+  color: #000;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+
+.form-control {
+  padding: 14px 24px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+  width: 100%;
+  margin-top: 72px;
+}
+
+.submit_btn {
+  border: none;
+  padding: 16px 24px;
+  border-radius: 4px;
+  background: #3354FF;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.submit_btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form p {
+  color: #767B8A;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+}
+
+.form p a {
+  color: #3354FF;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+}
+
+/* Table Design */
+.table-layout {
+  display: flex;
+  width: 1232px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+  box-shadow: 0px 2px 0px 0px #E3E4E8;
+  margin: 32px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+}
+
+table th {
+  color: #767B8A;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  padding: 12px 12px 12px 24px;
+  border-bottom: 1px solid var(--neutral-10, #E3E4E8);
+}
+
+tbody tr,
+td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #F1F2F3;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 21px */
+  letter-spacing: 0.15px;
+}
+
+/* td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+} */
+
+tr:nth-child(even) {
+  /* background-color: #dddddd; */
+}
+
+.all-post {
+  width: 1232px;
+  margin: auto;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.post-header p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.17px;
+}
+
+.post-header p span {
+  color: #767B8A;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+}
+
+.post-header button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 2px;
+  color: #3354FF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.post-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.post-main img {
+  height: 16px;
+  width: 16px;
+}
+
+.post-main p {
+  color: #767B8A;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.13px;
+}
+
+.post-head {
+  padding: 10px;
+}
+
+.post-head img {
+  border-radius: 8px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  height: 66px;
+  padding: 16px 104px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+
+}
+
+.footer-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
+
+.footer-content p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.15px;
+}
